@@ -9,15 +9,27 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>ร่วมส่งกำลังใจให้กับบุคลากรทางการเเพทย์</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700"> 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+
+
+    <link rel="stylesheet" href="css/aos.css">
     <!-- Custom styles for this template-->
     <link rel="stylesheet" href="fonts/icomoon/style.css">
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -30,57 +42,64 @@
 </head>
 
 <body>
-<header class="site-navbar py-3" role="banner">
-
-<div class="container">
-  <div class="row align-items-center">
+<div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
     
-    <div class="col-11 col-xl-2">
-      <h1 class="mb-0"><a href="index.php" class="text-white h2 mb-0">
-        <p>ใส่โลโก้จ้า</p></a></h1>
-    </div>
-    <div class="col-12 col-md-10 d-none d-xl-block">
-      <nav class="site-navigation position-relative text-right" role="navigation">
+    <header class="site-navbar py-3" role="banner">
 
-        <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
-          <li class="active"><a href="index.php">หน้าเเรก</a></li>
-          <li><a href="about.html">เกี่ยวกับ</a></li>
-          <li class="has-children">
-            <a href="services.html">บทความ</a>
-            <ul class="dropdown">
-              <li><a href="#">Air Freight</a></li>
-              <li><a href="#">Ocean Freight</a></li>
-              <li><a href="#">Ground Shipping</a></li>
-              <li><a href="#">Warehousing</a></li>
-              <li><a href="#">Storage</a></li>
-            </ul>
-          </li>
-          <li><a href="sum_thank.php">รวมคำขอบคุณ</a></li>
-          <li><a href="index.php#conent">ส่งกำลังใจ</a></li>
-          <li><a href="#">เเบบประเมิณ</a></li>
-        </ul>
-      </nav>
-    </div>
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-11 col-xl-2">
+            
+          </div>
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+
+            <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+            <li class="active"><a href="index.php">หน้าเเรก</a></li>
+            <li><a href="about.html">เกี่ยวกับ</a></li>
+            <li class="has-children">
+            <a href="#">บทความ</a>
+              <ul class="dropdown">
+                <li><a href="article1.html">รู้จักอาการ Covid-19</a></li>
+                <li><a href="article2.html">วิธีการใช้หน้ากากอนามัย</a></li>
+              </ul>
+            </li>
+            <li><a href="sum_thank.php">รวมคำขอบคุณ</a></li>
+            <li><a href="index.php#conent">ส่งกำลังใจ</a></li>
+            <li><a href="#">เเบบประเมิน</a></li>
+          </ul>
+            </nav>
+          </div>
 
 
-    <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
 
-    </div>
+          </div>
 
-  </div>
-</div>
-</header>
+        </div>
+      </div>
+      
+    </header>
 <div class="site-blocks-cover overlay" style="background-image: url(images/hero_bg_1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
 
           <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
             
-
-            <h3 class="text-white font-weight-light mb-5 text-uppercase font-weight-bold">ร่วมส่งกำลังใจให้เเก่บุคลากรทางการเเพทย์ ออนไลน์<br> By CA FITM KMUTNB</h3>
-            <p><a href="#conent" class="btn btn-primary py-3 px-5 text-white">ส่งกำลังใจ</a>
+          <div class="box-head">
+            <h2 class="text-white font-weight-light mb-5 box-head text-uppercase font-weight-bold">ร่วมส่งกำลังใจให้เเก่บุคลากรทางการเเพทย์ ออนไลน์<br> By CA FITM KMUTNB</h2>
+            </div>
+            <p><a href="#conent" style="margin-top: 10px;" class="btn btn-primary py-3 px-5 text-white">ส่งกำลังใจ</a>
             &nbsp;&nbsp;
-            <a href="sum_thank.php" class="btn btn-primary py-3 px-5 text-white">รวมคำขอบคุณ</a></p>
+            <a href="sum_thank.php" style="margin-top: 10px;" class="btn btn-primary py-3 px-5 text-white box_btn">รวมคำขอบคุณ</a></p>
             
 
           </div>
@@ -139,7 +158,7 @@
             <div class="border-top pt-5">
             <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | CA @FITM KMUTNB<i class="icon-heart" aria-hidden="true"></i> 
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
             </div>
@@ -152,6 +171,19 @@
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
 <script>
 
 $(document).ready(function(){
