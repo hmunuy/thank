@@ -36,6 +36,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
     <style>
+        .form-google{
+            margin-top: 20px;
+            max-height: 100%;
+        }
        
     </style>
 
@@ -64,7 +68,7 @@
 
             <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
             <li ><a href="index.php">หน้าเเรก</a></li>
-            <li class="active"><a href="about.html">เกี่ยวกับ</a></li>
+            <li><a href="about.html">เกี่ยวกับ</a></li>
             <li class="has-children">
             <a href="#">บทความ</a>
               <ul class="dropdown">
@@ -95,68 +99,26 @@
           <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
             
           <div class="box-head">
-            <h2 class="text-white font-weight-light mb-5 box-head text-uppercase font-weight-bold">ร่วมส่งกำลังใจให้เเก่บุคลากรทางการเเพทย์ ออนไลน์<br> By CA FITM KMUTNB</h2>
+            <b style="font-size: 30px;" class="text-white font-weight-light mb-5 box-head text-uppercase font-weight-bold">ร่วมทำแบบประเมิณเพื่อพัฒนาระบบเเละโครงงานให้ดียิ่งขึ้น<br> By CA FITM KMUTNB</b>
             </div>
-            <p><a href="#conent" style="margin-top: 10px;" class="btn btn-primary py-3 px-5 text-white">ส่งกำลังใจ</a>
-            &nbsp;&nbsp;
-            <a href="sum_thank.php" style="margin-top: 10px;" class="btn btn-primary py-3 px-5 text-white box_btn">รวมคำขอบคุณ</a></p>
+            <p><a href="#form-google" style="margin-top: 10px;" class="btn btn-primary py-3 px-5 text-white">ทำแบบประเมิณ</a>
+           
             
 
           </div>
         </div>
       </div>
     </div>  
-
-<div class="form-send" id="conent">
-<div class="row mb-5">
-          
-          
-      <div class="container">
-        
-        <br><br>
-     
-         
-
-      <div class="card">
-        
-    
-    <div class="card-body">
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-12 text-center border-primary">
-              <h2 class="mb-0 text-primary">ร่วมส่งกำลังใจให้กับบุคลากรทางการเเพทย์</h2>
-              <p class="color-black-opacity-5"><br>&nbsp;&nbsp;&nbsp;&nbsp;โครงการนี้เป็นโครงการเล็ก ๆ โครงการหนึ่งจากนักศึกษาในรายวิชา 080303601 มนุษยสัมพันธ์ สาขา คอมพิวเตอร์ช่วยออกเเบบเเละบริหารงานก่อสร้าง คณะ เทคโนโลบีเเละการจัดการอุตสาหกรรม มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ วิทยาเขตปราจีนบุรี
-        ซึ่งจัดขึ้นเพื่อมอบขวัญเเละกำลังใจในการทำงานแก่บุคลากรทางการเเพทย์ทุกท่าน 
-        ได้ผ่านพ้นวิกฤตโรคระบาด COVID-19 ที่ยากลำบากนี้ไปด้วยกัน
-         พวกเราขอเป็นอีกหนึ่งช่องทางเพื่อมอบคำขอบคุณให้แก่บุคลากรทางการเเพทย์ทุกท่าน ที่ทำงานกันอย่างหนัก
-        เพื่อช่วยเหลือประชาชนคนไทย</p>
+    <div class="container">
+        <div id="form-google" class="form-google">
+            <center>
+             <iframe onload="loaded();" id="oc-contact" src="https://docs.google.com/forms/d/e/1FAIpQLSeDPetyOyFKUpCFAv1tuKsrmwBCKnBP2mmv4SycUzUOhg-SNA/viewform?embedded=true" style="max-width: 100%;" width="900" height="1000" frameborder="0" marginheight="0" marginwidth="0">กำลังโหลด…</iframe>
+            </center>
             </div>
-          </div>
-          
-        </div> 
-    
-  </div>
-          
+    </div>
+
     
 
-      </div>
-</div>
-<footer class="site-footer">
-      <div class="container">
-       
-        <div class="row pt-5 mt-5 text-center">
-          <div class="col-md-12">
-            <div class="border-top pt-5">
-            <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | CA @FITM KMUTNB<i class="icon-heart" aria-hidden="true"></i> 
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-</footer>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.js"></script>
@@ -174,6 +136,26 @@
   <script src="js/aos.js"></script>
 
   <script src="js/main.js"></script>
+  <script>
+      ///ของGoogle form ให้ย่อหน้าตอนเสร็จเเล้ว
+
+    var loadCounter = 0;
+ 
+    function loaded () {
+ 
+        loadCounter += 1;
+ 
+        if (loadCounter === 4) { // เมื่อกดไปหน้าที่ 4 ให้ย่อหน้า
+ 
+            $("#oc-contact").attr("height", "400px");
+ 
+            $('#oc-contact').goTo();
+ 
+        }
+ 
+    }
+ 
+ </script>
 <script>
 
 $(document).ready(function(){

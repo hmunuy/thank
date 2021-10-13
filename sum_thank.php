@@ -52,7 +52,7 @@ $result = $conn->query($sql);
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- DataTables -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.11.3/datatables.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.11.3/datatables.min.css"/>
     
    
 
@@ -96,7 +96,7 @@ $result = $conn->query($sql);
             </li>
             <li class="active"><a href="sum_thank.php">รวมคำขอบคุณ</a></li>
             <li><a href="index.php#conent">ส่งกำลังใจ</a></li>
-            <li><a href="#">เเบบประเมิน</a></li>
+            <li class="active"><a href="form.html">เเบบประเมิน</a></li>
           </ul>
             </nav>
           </div>
@@ -150,7 +150,7 @@ $result = $conn->query($sql);
 
             <thead>
                 <tr>
-                <th>ว/ด/ป</th>
+                <th>ลำดับ</th>
                     <th>ว/ด/ป</th>
                     <th>ข้อความ</th>
                     <th>Like</th>
@@ -184,7 +184,7 @@ $result = $conn->query($sql);
             </tbody>
             <tfoot>
                 <tr>
-                <th>ว/ด/ป</th>
+                <th>ลำดับ</th>
                     <th>ว/ด/ป</th>
                     <th>ข้อความ</th>
                     <th>Like</th>
@@ -252,7 +252,7 @@ $result = $conn->query($sql);
         // "lengthChange": false,
         // "responsive": true,
         // "autoWidth": false,
-        // "ordering": true,
+        "ordering": true,
         "order": [[0, "desc"]],
       });
     });
@@ -271,7 +271,7 @@ $(document).ready(function(){
               success:function(data){
                   if(data.status == 1){
                   //Success Message == 'Title', 'Message body', Last one leave as it is
-                  swal({title: "Good job", text: "You clicked the button!", type: "success"})
+                  swal({title: "Like +1", text: "คุณได้กดถูกใจบทความเเล้ว!", type: "success"})
                   .then(function(){ location.reload();});
                       
                   }

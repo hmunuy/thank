@@ -74,7 +74,7 @@
             </li>
             <li><a href="sum_thank.php">รวมคำขอบคุณ</a></li>
             <li><a href="index.php#conent">ส่งกำลังใจ</a></li>
-            <li><a href="#">เเบบประเมิน</a></li>
+            <li class="active"><a href="form.html">เเบบประเมิน</a></li>
           </ul>
             </nav>
           </div>
@@ -95,7 +95,8 @@
           <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
             
           <div class="box-head">
-            <h2 class="text-white font-weight-light mb-5 box-head text-uppercase font-weight-bold">ร่วมส่งกำลังใจให้เเก่บุคลากรทางการเเพทย์ ออนไลน์<br> By CA FITM KMUTNB</h2>
+            <p style="font-size: 2               0px;" class="text-white font-weight-light mb-5 box-head text-uppercase font-weight-bold">เชิญชวนพี่ๆน้องๆ ร่วมส่งกำลังใจให้บุคลากรทางการแพทย์ ออนไลน์ <br>
+เพื่อสร้างขวัญและกำลังใจ ให้บุคลากรทางการแพทย์ทุกท่านมีแรงในการสู้ต่อ เพื่อพี่น้องประชาชน<br> By CA FITM KMUTNB</p>
             </div>
             <p><a href="#conent" style="margin-top: 10px;" class="btn btn-primary py-3 px-5 text-white">ส่งกำลังใจ</a>
             &nbsp;&nbsp;
@@ -137,7 +138,7 @@
         <div class="md-form amber-textarea active-amber-textarea-2">
           <i class="fas fa-pencil-alt prefix"></i>
           <textarea id="form24" name="thank" placeholder="กรอกข้อความคำขอบคุณ......" id="thank"  class="md-textarea form-control" rows="3"></textarea>
-          <label for="form24">กรอกข้อความคำขอบคุณเพื่อส่งกำลังใจให้เเก่บุคลากรทางการเเพทย์</label>
+          <label for="form24">**กรอกเฉพาะตัวอักษรไทยเเละอังกฤษเท่านั้น!! </label>
         </div>
          </div>
          <center> <button type="submit" class="btn btn-primary">ส่งคำขอบคุณ</button></center>

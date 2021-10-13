@@ -1449,3 +1449,7 @@ h1, h2, h3, h4, h5,
 .active-amber-textarea-2.md-form textarea.md-textarea:focus:not([readonly])+label {
   color: #ffa000;
 }
+.form-google{
+  margin-top: 20px;
+  max-height: 100%;
+}
