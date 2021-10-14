@@ -164,7 +164,7 @@ $result = $conn->query($sql);
             // output data of each row
               while($row = $result->fetch_assoc()) {  ?>
                   <tr>
-                  <?php $row["id"];?>
+                  
                   <td><?php echo $row["id"];?></td>
                       <td><?php echo $row["date-thank"];?></td>
                       <td><?php echo $row["text_thank"];?></td>
@@ -222,9 +222,7 @@ $result = $conn->query($sql);
   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
-  <!-- DataTables -->
-  <!-- <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script> -->
-  <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.11.3/datatables.min.js"></script>
+  
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -245,15 +243,25 @@ $result = $conn->query($sql);
   <script src="js/aos.js"></script>
 
   <script src="js/main.js"></script>
+  <!-- DataTables -->
+  <!-- <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script> -->
+  <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.11.3/datatables.min.js"></script>
   <script>
 
     $(document).ready(function() {
       var table = $('table.display').DataTable({
-        // "lengthChange": false,
-        // "responsive": true,
-        // "autoWidth": false,
         "ordering": true,
         "order": [[0, "desc"]],
+        "columnDefs": [
+      {
+        "orderable": true,
+        "targets": [0,1],
+      },
+      {
+        "orderable": false,
+        "targets": '_all',
+      }
+    ],
       });
     });
 
