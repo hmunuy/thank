@@ -1,20 +1,4 @@
-<?php 
 
-
-$servername = "localhost";
-$username = "ccstrans_thank";
-$password = "nuy037964";
-$dbname = "ccstrans_thank";
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-// Check connection
-if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
-}
-
-$sql = "SELECT * FROM ccstrans_thank  ";
-$result = $conn->query($sql);
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,7 +36,7 @@ $result = $conn->query($sql);
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- DataTables -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.11.3/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.11.3/datatables.min.css"/>
     
    
 
@@ -85,16 +69,16 @@ $result = $conn->query($sql);
             <nav class="site-navigation position-relative text-right" role="navigation">
 
             <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
-            <li ><a href="index.php">หน้าเเรก</a></li>
+            <li class="active"><a href="index.php">หน้าเเรก</a></li>
             <li><a href="about.html">เกี่ยวกับ</a></li>
-            <li class="has-children">
-            <a href="#">บทความ</a>
+            <li class="has-children active">
+              <a href="#">บทความ</a>
               <ul class="dropdown">
-              <li><a href="article1.html">รู้จักอาการ Covid-19</a></li>
+                <li><a href="article1.html">รู้จักอาการ Covid-19</a></li>
                 <li><a href="article2.html">วิธีการใช้หน้ากากอนามัย</a></li>
               </ul>
             </li>
-            <li class="active"><a href="sum_thank.php">รวมคำขอบคุณ</a></li>
+            <li><a href="sum_thank.php">รวมคำขอบคุณ</a></li>
             <li><a href="index.php#conent">ส่งกำลังใจ</a></li>
             <li class="active"><a href="form.html">เเบบประเมิน</a></li>
           </ul>
@@ -115,8 +99,8 @@ $result = $conn->query($sql);
           <div class="row align-items-center justify-content-center text-center">
 
             <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-              <h1 class="text-white font-weight-light text-uppercase font-weight-bold">รวมคำขอบคุณ</h1>
-              <p class="breadcrumb-custom"><a href="index.php">หน้าเเรก</a> <span class="mx-2">&gt;</span> <span>รวมคำขอบคุณ</span></p>
+              <h1 class="text-white font-weight-light text-uppercase font-weight-bold">รู้จักอาการ Covid-19</h1>
+              <p class="breadcrumb-custom"><a href="index.php">หน้าเเรก</a> <span class="mx-2">&gt;</span> <span>รู้จักอาการ Covid-19</span></p>
             </div>
           </div>
         </div>
@@ -136,62 +120,21 @@ $result = $conn->query($sql);
             <div class="col-md-12 text-center border-primary">
               <h2 class="mb-0 text-primary">ร่วมส่งกำลังใจให้กับบุคลากรทางการเเพทย์</h2>
               <p class="color-black-opacity-5"><br>&nbsp;&nbsp;&nbsp;&nbsp;โครงการนี้เป็นโครงการเล็ก ๆ โครงการหนึ่งจากนักศึกษาในรายวิชา 080303601 มนุษยสัมพันธ์ สาขา คอมพิวเตอร์ช่วยออกเเบบเเละบริหารงานก่อสร้าง คณะ เทคโนโลบีเเละการจัดการอุตสาหกรรม มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ วิทยาเขตปราจีนบุรี
-      ซึ่งจัดขึ้นเพื่อมอบขวัญเเละกำลังใจในการทำงานแก่บุคลากรทางการเเพทย์ทุกท่าน 
-      ได้ผ่านพ้นวิกฤตโรคระบาด COVID-19 ที่ยากลำบากนี้ไปด้วยกัน
-       พวกเราขอเป็นอีกหนึ่งช่องทางเพื่อมอบคำขอบคุณให้แก่บุคลากรทางการเเพทย์ทุกท่าน ที่ทำงานกันอย่างหนัก
-      เพื่อช่วยเหลือประชาชนคนไทย</p>
+                ซึ่งจัดขึ้นเพื่อมอบขวัญเเละกำลังใจในการทำงานแก่บุคลากรทางการเเพทย์ทุกท่าน 
+                ได้ผ่านพ้นวิกฤตโรคระบาด COVID-19 ที่ยากลำบากนี้ไปด้วยกัน
+                 พวกเราขอเป็นอีกหนึ่งช่องทางเพื่อมอบคำขอบคุณให้แก่บุคลากรทางการเเพทย์ทุกท่าน ที่ทำงานกันอย่างหนัก
+                เพื่อช่วยเหลือประชาชนคนไทย</p>
             </div>
           </div>
         <div class="card">
           
       
       <div class="card-body">
-        <table class="display table table-hover" style="width:100%">
-
-            <thead>
-                <tr>
-                <th>ลำดับ</th>
-                    <th>ว/ด/ป</th>
-                    <th>ข้อความ</th>
-                    <th>Like</th>
-                    
-                </tr>
-            </thead>
-            <tbody>
-              
-            <?php 
-            if ($result->num_rows > 0) {
-            // output data of each row
-              while($row = $result->fetch_assoc()) {  ?>
-                  <tr>
-                  
-                  <td><?php echo $row["id"];?></td>
-                      <td><?php echo $row["date-thank"];?></td>
-                      <td><?php echo $row["text_thank"];?></td>
-                      
-                      <td>
-                      
-                      <button class="btn btn-danger like-btn"  
-                      thnak_id = "<?php echo $row["id"];?>" id="like-btn">
-                      <i class="far fa-heart"></i> 
-                      <?php echo $row['like_thank']?>Like</button>
-                    
-                      </td>
-                  </tr>
-                  <?php  
-                }
-            }?>
-            </tbody>
-            <tfoot>
-                <tr>
-                <th>ลำดับ</th>
-                    <th>ว/ด/ป</th>
-                    <th>ข้อความ</th>
-                    <th>Like</th>
-                    
-                </tr>
-            </tfoot>
-        </table>
+        <center>
+        <div class="justify-content-center">
+        <img  style="max-width: 50%;" src="images/article1.png">
+      </div>
+    </center>
       </div> 
       
     </div>
@@ -217,12 +160,12 @@ $result = $conn->query($sql);
           </div>
         </div>
   </footer>
-  
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
-  
+  <!-- DataTables -->
+  <!-- <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script> -->
+  <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.11.3/datatables.min.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -243,29 +186,19 @@ $result = $conn->query($sql);
   <script src="js/aos.js"></script>
 
   <script src="js/main.js"></script>
-  <!-- DataTables -->
-  <!-- <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script> -->
-  <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.11.3/datatables.min.js"></script>
   <script>
 
     $(document).ready(function() {
       var table = $('table.display').DataTable({
-        "ordering": true,
+        // "lengthChange": false,
+        // "responsive": true,
+        // "autoWidth": false,
+        // "ordering": true,
         "order": [[0, "desc"]],
-        "columnDefs": [
-      {
-        "orderable": true,
-        "targets": [0,1],
-      },
-      {
-        "orderable": false,
-        "targets": '_all',
-      }
-    ],
       });
     });
 
-$(document).ready(function(){
+    $(document).ready(function(){
 
       // กรณี กดปุ่ม like
       $(document).on('click','.like-btn',function(e) {
@@ -279,7 +212,7 @@ $(document).ready(function(){
               success:function(data){
                   if(data.status == 1){
                   //Success Message == 'Title', 'Message body', Last one leave as it is
-                  swal({title: "Like +1", text: "คุณได้กดถูกใจบทความเเล้ว!", type: "success"})
+                  swal({title: "Good job", text: "You clicked the button!", type: "success"})
                   .then(function(){ location.reload();});
                       
                   }
