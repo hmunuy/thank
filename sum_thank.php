@@ -102,7 +102,7 @@ $result = $conn->query($sql);
 
             <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
               <h1 class="text-white font-weight-light text-uppercase font-weight-bold">รวมคำขอบคุณ</h1>
-              <p class="breadcrumb-custom"><a href="index.html">หน้าเเรก</a> <span class="mx-2">&gt;</span> <span>รวมคำขอบคุณ</span></p>
+              <p class="breadcrumb-custom"><a href="index.php">หน้าเเรก</a> <span class="mx-2">&gt;</span> <span>รวมคำขอบคุณ</span></p>
             </div>
           </div>
         </div>
